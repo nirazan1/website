@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home :: A Site About Computer Languages</title>
+  <link rel="stylesheet" type="text/css" href="assest/css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="assest/js/bootstrap.js"></script>
+  <script>
+function validateForm() {
+    var x = document.forms["newform"]["name"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+<!-- nav bar start -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<li class="active"><a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="form.html">Feedback</a></li>
+						<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://www.w3schools.com/html">HTML</a></li>
+								<li><a href="http://www.w3schools.com/css">CSS</a></li>
+								<li><a href="http://www.w3schools.com/js">JavaScript</a></li>
+								<li><a href="http://www.w3schools.com/ruby">Ruby</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+<!-- nav bar end -->
+
+	<section class="container">
+		<div class="jumbotron">
+			<h1>Computer Languages</h1>
+			<h3>A Simple site about different computer languages built using bootstrap.</h3>
+			<!-- modal start -->
+			<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Send Feedback</button>
+			<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Message</h4>
+					</div>
+					<div class="modal-body">
+						<form name="newform" class="form-group" onsubmit="return validateForm()" method="post" action="#">
+						<label>Name:</label>
+						<input type="text" name="name" class="form-control" placeholder="Your name" autocomplete="off">
+						<label>Message:</label>
+						<textarea type="msg" name="message" class="form-control" placeholder="Enter your message..."></textarea>
+						</br>
+						<button class="btn btn-success btn-sm" type="submit">Submit</button>
+						<button class="btn btn-default btn-sm" type="reset">Reset</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			</div>	
+			<!-- modal end	 -->
+		</div>
+		<!--
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+		  <ol class="carousel-indicators">
+		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#myCarousel" data-slide-to="1"></li>
+		    <li data-target="#myCarousel" data-slide-to="2"></li>
+		    <li data-target="#myCarousel" data-slide-to="3"></li>
+		  </ol>
+
+
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="assest/images/all.png" alt="all">
+		      <div class="carousel-caption">
+		        <h3>Chania</h3>
+		        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="assest/images/css3.jpg" alt="CSS">
+		      <div class="carousel-caption">
+		        <h3>Chania</h3>
+		        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="assest/images/javascript.png" alt="Java">
+		      <div class="carousel-caption">
+		        <h3>Flowers</h3>
+		        <p>Beatiful flowers in Kolymbari, Crete.</p>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="assest/images/html.png" alt="HTML">
+		      <div class="carousel-caption">
+		        <h3>Flowers</h3>
+		        <p>Beatiful flowers in Kolymbari, Crete.</p>
+		      </div>
+		    </div>
+		  </div>
+
+
+		  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+		-->
+
+		<div class="col-md-3">
+			<img class="img-circle" src="assest/images/html5.gif">
+			<h2>HTML</h2>
+			<p><strong> HTML is a markup language for describing web documents (web pages).</strong></p>
+				<p>HTML stands for Hyper Text Markup Language</p>
+				<p>A markup language is a set of markup tags</p>
+				<p>HTML documents are described by HTML tags</p>
+				<p>Each HTML tag describes different document content</p>
+			
+		</div>
+		<div class="col-md-3">
+			<img class="img-circle" src="assest/images/css3logo.png">
+			<h2>CSS</h2>
+			
+				<p><strong> CSS stands for Cascading Style Sheets</strong></p>
+				<p>CSS defines how HTML elements are to be displayed</p>
+				<p>Styles were added to HTML 4.0 to solve a problem</p>
+				<p>CSS saves a lot of work</p>
+				<p>External Style Sheets are stored in CSS files</p>
+			
+		</div>
+		<div class="col-md-3">
+			<img class="img-circle" src="assest/images/java.png">
+			<h2>Javascript</h2>
+			<p><strong>JavaScript is the most popular programming language in the world.</strong></p>
+			
+				<p>JavaScript is the most popular programming language in the world.</p>
+				<p>Programming makes computers do what you want them to do.</p>
+				<p>JavaScript is easy to learn</p>
+			
+		</div>
+		<div class="col-md-3">
+			<img class="img-circle" src="assest/images/ruby.jpeg">
+			<h2>Ruby</h2>
+			
+				<p> <strong>Ruby is dynamic, object oriented programming language</strong> </p>
+				<p>It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan</p>
+				<p>It supports multiple programming paradigms, including functional, object-oriented, and imperative.</p>
+				<p>It also has a dynamic type system and automatic memory management.</p>
+			
+		</div>
+	</section>
+
+	<footer class="panel-footer">
+		<p>@Nirajan Pokharel</p>
+	</footer>
+
+</body>
+</html>
+
+

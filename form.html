@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About Me :: A Site About Computer Languages</title>
+   <link rel="stylesheet" type="text/css" href="assest/css/bootstrap.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="index.html">Home</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+					<li><a href="about.html">About Me</a></li>
+					<li class="active"><a href="form.html">Feedback</a></li>
+					<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="http://www.w3schools.com/html">HTML</a></li>
+					<li><a href="http://www.w3schools.com/css">CSS</a></li>
+					<li><a href="http://www.w3schools.com/js">JavaScript</a></li>
+					<li><a href="http://www.w3schools.com/ruby">Ruby</a></li>
+					</ul>
+					</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	<section class="container">
+	<div class="jumbotron">
+		<h1>Computer Languages</h1>
+		<p>A Simple site about different computer languages build using bootstrap.</p>
+	</div>
+		<h2>Send Feedback</h2>
+		<form name="newform" class="form-group" method="post" action="#">
+			<div class="col-xs-6">
+			<label>Name:</label>
+			<input type="text" name="name" class="form-control" placeholder="Your name" autocomplete="off" required>
+			<label>Email:</label>
+			<input type="email" name="email" class="form-control" placeholder="Your e-mail address" autocomplete="off" required>
+			<label>Website:</label>
+			<input type="url" name="website" class="form-control" placeholder="Website URL" autocomplete="off">
+			<label>Telephone:</label>
+			<input type="tel" name="telephone" class="form-control" placeholder="Phone number?(optional)" >
+			<label>Message:</label>
+			<textarea type="msg" name="message" class="form-control" placeholder="Enter your message..." required></textarea>
+			</br>
+			<button class="btn btn-md btn-primary btn-success" type="submit">Submit</button>
+			<button class="btn btn-md btn-primary btn-default" type="reset">Reset</button>
+			</div>
+		</form>
+	</section>
+	<footer class="panel-footer" >
+	<p>@Nirajan Pokharel</p>
+
+	</footer>
+</body>
+</html>
